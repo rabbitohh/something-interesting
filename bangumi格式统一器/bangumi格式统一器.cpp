@@ -1,29 +1,30 @@
 #include<iostream>
 #include<cstdio>
-#include<cstring>
+#include<string>
 using namespace std;
-string s[10086];
+wstring s[10086];
 int main()
 {
 	int cnt=0;
 	while(1)
 	{
-		cin>>s[++cnt];
-		if(s[cnt]=="done") break;
+		wcin>>s[++cnt];
+		if(s[cnt]==L"done") break;
 	}
 	freopen("result1.txt","w",stdout);
 	for(int i=1;i<=cnt-2;i++)
 	{
-		cout<<s[i]<<",";
+		wcout<<s[i]<<",";
 	}
-	cout<<s[cnt-1];
+	wcout<<s[cnt-1];
 	freopen("result2.txt","w",stdout);
 	for(int i=1;i<=cnt-2;i++)
 	{
-		cout<<s[i]<<"ã€";
+		wcout<<s[i]<<"¡¢";
 	}
-	cout<<s[cnt-1];
+	wcout<<s[cnt-1];
 	freopen("CON","w",stdout);
-	cout<<"å†™å…¥å®Œæˆå•¦A_A"; 
+	cout<<"Ð´ÈëÍê³ÉÀ²A_A"; 
 	return 0;
 }
+
