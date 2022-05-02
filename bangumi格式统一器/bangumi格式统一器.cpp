@@ -5,6 +5,7 @@ using namespace std;
 wstring s[10086];
 int main()
 {
+	wcout.imbue(locale(""));
 	int cnt=0;
 	while(1)
 	{
